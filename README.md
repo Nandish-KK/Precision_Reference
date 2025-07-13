@@ -4,7 +4,7 @@
 A compact 2.5V precision voltage reference module, ideal for use as a standalone reference when building analog circuit prototypes or for verifying the accuracy of your multimeter’s voltage range over time.
 
 
-![Project Banner](images/banner.png)
+
 
 ---
 
@@ -12,11 +12,9 @@ A compact 2.5V precision voltage reference module, ideal for use as a standalone
 
 ### Main UI
 
-![Screenshot 1](images/screenshot1.png)
+![Screenshot 1](Photos/REF03_Render.png)
 
-### Another Feature
-
-![Screenshot 2](images/screenshot2.png)
+![Screenshot 2](Photos/REF03_Render2.png)
 
 ---
 
