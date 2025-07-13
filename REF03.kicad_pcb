@@ -5109,6 +5109,32 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "OFF"
+		(at -4.0132 15.24 0)
+		(layer "F.SilkS")
+		(uuid "510ae6b3-608e-4fe6-9887-8fd27a13dcfa")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "ON\n"
+		(at -3.9116 19.8628 0)
+		(layer "F.SilkS")
+		(uuid "656926a5-fd92-4352-b4ef-eb767705b302")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Temp"
 		(at 3.175 8.382 0)
 		(layer "F.SilkS")
