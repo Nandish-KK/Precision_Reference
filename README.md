@@ -1,7 +1,8 @@
-#Boiler code (in progress)
-#  Precision Reference
 
-A brief description of what this project does and who it's for.
+#  2.5V Precision Reference
+
+A compact 2.5V precision voltage reference module, ideal for use as a standalone reference when building analog circuit prototypes or for verifying the accuracy of your multimeter’s voltage range over time.
+
 
 ![Project Banner](images/banner.png)
 
