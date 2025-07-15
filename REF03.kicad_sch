@@ -766,6 +766,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_0_1"
+				(polyline
+					(pts
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.2192)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2270,6 +2419,12 @@
 		(uuid "a25d1f2f-4354-44cf-ac31-70e53e0b5a42")
 	)
 	(junction
+		(at 240.03 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0e8ed78-26a7-446c-acf9-02ab4403d034")
+	)
+	(junction
 		(at 147.32 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2433,6 +2588,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 83.82) (xy 232.41 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93a98bfc-4732-487f-a376-698093162967")
+	)
+	(wire
+		(pts
 			(xy 196.85 91.44) (xy 201.93 91.44)
 		)
 		(stroke
@@ -2503,7 +2668,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 83.82) (xy 215.9 83.82)
+			(xy 242.57 83.82) (xy 240.03 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2520,6 +2685,16 @@
 			(type default)
 		)
 		(uuid "da24f65d-ea18-4df7-8e65-ce4058ef9c78")
+	)
+	(wire
+		(pts
+			(xy 240.03 90.17) (xy 240.03 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da9b6cb3-75ef-4a09-b999-2377a29d9c36")
 	)
 	(wire
 		(pts
@@ -2540,6 +2715,16 @@
 			(type default)
 		)
 		(uuid "dd297b5f-dfa6-4fab-82f1-3372d31714bd")
+	)
+	(wire
+		(pts
+			(xy 224.79 83.82) (xy 215.9 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c56eee-1351-40c2-8bba-2a273f1afe27")
 	)
 	(wire
 		(pts
@@ -3105,6 +3290,72 @@
 			(project ""
 				(path "/4be3bb69-04ea-48d5-a362-e08cf2d96848"
 					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43765d2e-e4bc-41f2-a481-2d453ca27204")
+		(property "Reference" "#PWR014"
+			(at 240.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.808 102.616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d363cb2-4504-472b-90f5-b27fc6d6d2c1")
+		)
+		(instances
+			(project "REF03"
+				(path "/4be3bb69-04ea-48d5-a362-e08cf2d96848"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3848,6 +4099,75 @@
 			(project "relaxation_dual_gate"
 				(path "/4be3bb69-04ea-48d5-a362-e08cf2d96848"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 240.03 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "7f690c10-4c61-4f28-b0a1-cf39ef385672")
+		(property "Reference" "C7"
+			(at 246.38 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 249.682 92.202 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 239.0648 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 240.03 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8269ff09-6f34-4202-8cc6-846ded362847")
+		)
+		(pin "1"
+			(uuid "58275127-109f-4e6a-9597-4bb2bc44fc88")
+		)
+		(instances
+			(project "REF03"
+				(path "/4be3bb69-04ea-48d5-a362-e08cf2d96848"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -4758,35 +5078,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 217.17 83.82 270)
+		(lib_id "Device:FerriteBead")
+		(at 228.6 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
-		(uuid "fbd7178f-744d-45cb-bf94-996ff3b17852")
-		(property "Reference" "TP1"
-			(at 222.25 82.5499 90)
+		(uuid "ed89f059-1847-4b24-abb0-6701ee9dd1fa")
+		(property "Reference" "FB1"
+			(at 228.5492 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "REF_OUT"
-			(at 222.25 85.0899 90)
+		(property "Value" "FerriteBead"
+			(at 228.5492 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
-			(at 217.17 88.9 0)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 228.6 85.598 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4795,7 +5113,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 217.17 88.9 0)
+			(at 228.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 228.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0919411-5eed-405e-9fda-2bedb0d95bef")
+		)
+		(pin "1"
+			(uuid "8107698a-513e-4be5-afe8-631372344b8d")
+		)
+		(instances
+			(project ""
+				(path "/4be3bb69-04ea-48d5-a362-e08cf2d96848"
+					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 242.57 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbd7178f-744d-45cb-bf94-996ff3b17852")
+		(property "Reference" "TP1"
+			(at 247.65 82.5499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "REF_OUT"
+			(at 247.65 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
+			(at 242.57 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4804,7 +5192,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 217.17 83.82 0)
+			(at 242.57 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
