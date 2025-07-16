@@ -68,13 +68,16 @@ While sinking 16mA of total current, the charge pump output drops to around 4.87
 Currently, I don't own a precision multimeter, which makes it harder to measure how stable the output voltage really is. What I do own is a DSO with a 12-bit ADC (SDS800X), and it seems to read the voltage accurately up to 4 digits easily. The high-frequency noise at the output seems a bit annoying and likely skews the results a bit.
 
 ![Reference_stability](Photos/Output_20MBW_No_Filter.png)
-Reference voltage with No filter(BW: 20MHz)
+Reference voltage with No filter(Coupling: DC , BW: 20MHz)
 
 ## Filtering
-In the end, I attempted to filter out the high-frequency noise using a simple RC filter with a cutoff frequency of around 1.5 kHz to achieve a more stable result. I also substituted the resistor with a ferrite bead. Both methods worked well in attenuating the noise. Although the filter did not eliminate it entirely, the noise was attenuated by approximately 25 dB when using the ferrite bead.
+In the end, I attempted to filter out the high-frequency noise using a simple RC filter with a cutoff frequency of around 1.5 kHz to achieve a more stable result. I also substituted the resistor with a ferrite bead. Both methods worked well in attenuating the noise. Although the filter did not eliminate it entirely, the noise was attenuated by approximately 20 dB when using the ferrite bead.
 
-![Reference_stability](Photos/ScreenImg_RC_Filter.png)
-Reference voltage with a Ferrite Bead Pi Filter (BW: 20MHz)
+![Attenuated_Noise](Photos/ScreenImg_FB_Filter20_AC_coupled.png)
+Noise measurement with a Ferrite Bead Pi Filter (Coupling: AC , BW: 20MHz)
+
+![Attenuated_Noise_DC](Photos/ScreenImg_FB_Filter20_DC_coupled.png)
+Reference voltage with Ferrite Bead and a 10uF capacitor filter(Coupling: DC , BW: 20MHz)
 
 ## PCB Layout
 The following schematic and PCB are designed with KiCad 9.
