@@ -7,6 +7,7 @@ A compact 2.5V precision voltage reference module, ideal for use as a standalone
 The design required a low voltage source to make the Reference module as compact as possible. A CR2032 coin cell at 3V is the ideal candidate.
 This requirement turns into a design constraint as the minimum operating voltage stated in the datasheet for the REF03 is 4.5V. The REF03 is a Low-Dropout
 type Reference and is the best option to design a voltage reference due to its extremly low Temperature coefficient (10-50 ppm/C) and requires minimum passive components to operate.
+
 ![Prototype](Photos/Render.jpg)
 
 ![Proto_board](Photos/proto_board_back.png)
